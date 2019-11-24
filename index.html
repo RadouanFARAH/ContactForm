@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body >
+    <div style="
+    position: relative;
+    width: 50%;
+    left: 25%;
+    ">
+    <h1 style="color: crimson; text-align: center;">Contactez-Nous</h1>
+    
+    <form id="form" action="/" method="GET">
+        <div class="row">
+                <div class="col">
+                  <div  style="color: red;" id="nomerror" ></div>
+                  <input style="background-color: #d1d1d1;" id="nom" name="nom" type="text" class="form-control" placeholder="Nom Complet">
+                </div>
+                <div class="col">
+                  <div style="color: red;" id="telerror"></div>
+                  <input style="background-color: #d1d1d1;" id="tel" name="tel" type="tel" class="form-control" placeholder="Telephone">
+                </div>
+              </div>
+<br>
+<div class="row">
+        <div class="col">
+          <div style="color: red;" id="emailerror" ></div>
+          <input style="background-color: #d1d1d1;" id="email" name="email" type="email" class="form-control" placeholder="Email">
+        </div>
+        <div class="col">
+          <input style="background-color: #d1d1d1;" id="societe" name="societe" type="text" class="form-control" placeholder="Societe">
+        </div>
+      </div>
+<br>
+
+        <div style="padding-left: 15px; padding-right: 15px;" class="row">
+            <input style="background-color: #d1d1d1;" class="form-control" id="objet" name="objet" placeholder="Objet" type="text">
+        </div>
+<br>
+        <div style="padding-left: 15px; padding-right: 15px;" class="row">
+             <div style="color: red;" id="messageerror"></div>
+             <textarea  style="background-color: #d1d1d1;" class="form-control" id="message" name="message" id="text"  placeholder="Message..." ></textarea>
+        </div>
+<br>
+
+        <div>
+            <button  
+            style="
+            position: relative;
+            width: 20%;
+            left: 40%;
+            text-align: justify;text-justify: auto;
+            " 
+          class="btn btn-danger" type="submit">Envoyer</button>
+        </div>
+
+    </form>
+    <br>
+    <div class="row" id="info"></div>    
+</div>
+
+
+</body>
+</html>
